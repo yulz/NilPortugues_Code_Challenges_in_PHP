@@ -2,7 +2,7 @@ Code Challenges Resolved using PHP
 ===================================
 This repository holds the following challenging algorithms coded in PHP:
 
-## What do these algorithms teaches us?
+## What do these algorithms teach us?
 
 #### [**SuperSum**](https://github.com/nilopc/NilPortugues_Code_Challenges_in_PHP/blob/master/SuperSum.php) 
   - Generation of all the possible cases before hand.  
