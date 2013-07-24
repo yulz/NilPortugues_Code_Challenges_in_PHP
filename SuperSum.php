@@ -42,17 +42,17 @@ function SuperSumHelper($k, $n,&$cases,&$calculated)
         $tmp = 0;
         for ($i=1; $i<=$n; ++$i) {
             if (empty($cases[($k-1).",".$i])) {
-        //Check if cached
+                //Check if cached
                 if (!empty($calculated[($k-1).",".$i])) {
                     $tmp += $calculated[($k-1).",".$i];
                 }
-        //Not cached. Calculate and cache.
+                //Not cached. Calculate and cache.
                 else{
                     $cases[($k-1).",".$i] = SuperSum($k-1,$i,$calculated);
 
                     $tmp += $cases[($k-1).",".$i];
 
-          //Add to cache. Important to notice it's $k and not $k-1 we're saving.
+                    //Add to cache. Important to notice it's $k and not $k-1 we're saving.
                     $calculated[($k).",".$i] = $tmp;
                 }
             }
